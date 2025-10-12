@@ -1,0 +1,30 @@
+.farmers {
+  padding: 20px;
+  position: relative;
+  left: 15%;
+  width: 80%;
+  top: 5%;
+}
+
+.page-title {
+  color: #2f855a;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.active {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status.inactive {
+  background-color: #fed7d7;
+  color: #c53030;
+}

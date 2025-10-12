@@ -1,0 +1,180 @@
+/* Users.css */
+:root {
+  --primary-color: #045d1f;
+  --secondary-color: #aeccb8;
+  --background-color: #d7dbd9;
+  --text-color: #000000;
+  --light-text-color: #131212;
+  --card-bg: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --border: #ddd;
+  
+  --shadow-light: 0 4px 15px rgba(4, 93, 31, 0.1);
+  --shadow-hover: 0 8px 25px rgba(4, 93, 31, 0.15);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.users {
+  max-width: 1200px;
+  position: relative;
+  left: 8%;
+  margin: 0 auto;
+  padding: 2rem;
+  /* background-color: #f8fafc; */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.users h2 {
+  position: relative;
+  left: 1.5rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+thead {
+  background-color: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+th {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+th:first-child {
+  border-top-left-radius: 12px;
+}
+
+th:last-child {
+  border-top-right-radius: 12px;
+}
+
+tbody tr {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 1.25rem 1.5rem;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+td:first-child {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-width: 100px;
+  outline: none;
+}
+
+select:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+select option {
+  padding: 0.5rem;
+  background-color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .users {
+    padding: 1rem;
+  }
+
+  .users h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  th,
+  td {
+    padding: 1rem 0.75rem;
+  }
+
+  th {
+    font-size: 0.8rem;
+  }
+
+  select {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* For very small screens, make table scrollable */
+@media (max-width: 480px) {
+  .users {
+    padding: 0.5rem;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td {
+    min-width: 120px;
+  }
+}

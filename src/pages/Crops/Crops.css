@@ -1,0 +1,215 @@
+/* Main Container - Updated for smaller width and centering */
+.crops-container {
+  padding: 20px;
+  width: 60%; /* Changed: Smaller width (60% of page) */
+  max-width: 800px; /* Changed: Narrower max-width for large screens */
+  margin: 0 auto; /* Ensures horizontal centering on the page */
+  box-sizing: border-box;
+  
+}
+
+.page-title {
+  color: #2f855a;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center; /* Centers the title within the container */
+}
+
+/* Error Message - Centered and fits within smaller width */
+.error-message {
+  background-color: #fed7d7;
+  color: #c53030;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #c53030;
+  text-align: center;
+}
+
+/* Form Styles - Fits within smaller container */
+.crops-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  /* No max-width here—inherits from container for centering */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.crops-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.crops-form input:focus {
+  outline: none;
+  border-color: #2f855a;
+  box-shadow: 0 0 0 2px rgba(47, 133, 90, 0.2);
+}
+
+.submit-btn {
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #22543d;
+}
+
+/* Crops List Styles - Fits within smaller container */
+.crops-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crop-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #2f855a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.crop-name {
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1;
+}
+
+.crop-price,
+.crop-profit {
+  color: #2f855a;
+  font-weight: 500;
+}
+
+.crop-link {
+  color: #2f855a;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #2f855a;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.crop-link:hover {
+  background-color: #2f855a;
+  color: white;
+}
+
+/* Empty State - Centered within container */
+.empty-state {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* Responsive Design - Expands on small screens */
+@media (max-width: 768px) {
+  .crops-container {
+    width: 100%; /* Changed: Full width on mobile for usability */
+    padding: 10px;
+    max-width: none; /* Removes max-width limit on small screens */
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .crops-form {
+    padding: 15px;
+  }
+
+  .crop-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+  }
+}
+
+/* Fallback Generic Selectors (if no classes in JSX) - Updated for centering */
+div > form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto; /* Centers the form */
+  max-width: 600px; /* Smaller width for fallback */
+  width: 100%;
+  position: relative;
+  left: 8%;
+  
+}
+
+div > form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div > form button {
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+div > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Centers the list */
+  max-width: 800px; /* Matches container width */
+  width: 100%;
+}
+
+div > ul li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  border-left: 4px solid #2f855a;
+}
